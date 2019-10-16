@@ -1,5 +1,5 @@
 arch: arm64
-language: generic
+language: minimal
 dist: bionic
 
 env:
