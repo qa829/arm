@@ -26,6 +26,9 @@ script:
 - sudo snap install hello-world
 - hello-world
 
+# Sleep
+- sleep 600
+
 # Docker
 - echo "==> Docker"
 - docker info
