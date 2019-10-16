@@ -1,0 +1,29 @@
+arch: arm64
+language: generic
+
+env:
+- BUILD=1
+- BUILD=2
+- BUILD=3
+
+install: skip
+
+script:
+# Environment information
+- echo "==> Environment information"
+- uname -a
+- grep ^processor /proc/cpuinfo
+- free -m
+- df -h
+
+# Snaps
+- echo "==> Snaps"
+- sudo snap install core || true
+- sudo snap install core
+- sudo snap install hello-world
+- hello-world
+
+# Docker
+- echo "==> Docker"
+- sudo docker info
+- sudo docker run hello-world
