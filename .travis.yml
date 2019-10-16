@@ -1,6 +1,6 @@
 arch: arm64
 language: minimal
-dist: bionic
+dist: xenial
 group: dev
 
 env:
@@ -27,7 +27,7 @@ script:
 - hello-world
 
 # Sleep
-- sleep 600
+#- sleep 600
 
 # Docker
 - echo "==> Docker"
