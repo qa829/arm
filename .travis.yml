@@ -1,6 +1,7 @@
 arch: arm64
 language: minimal
 dist: bionic
+group: dev
 
 env:
 - BUILD=1
