@@ -1,6 +1,6 @@
 arch: arm64
 language: minimal
-dist: xenial
+dist: bionic
 group: dev
 
 env:
