@@ -1,5 +1,35 @@
-os: osx
+arch: arm64
+language: minimal
+dist: xenial
+#group: dev
+
+env:
+- BUILD=1
+#- BUILD=2
+# - BUILD=3
+
+install: skip
+
 script:
-- brew info
-- brew update
-- brew info
+# Environment information
+- echo "==> Environment information"
+- uname -a
+- cat /etc/os-release
+- grep ^processor /proc/cpuinfo
+- free -m
+- df -h
+
+# Snaps
+- echo "==> Snaps"
+- sudo snap install core || true
+- sudo snap install core
+- sudo snap install hello-world
+- hello-world
+
+# Sleep
+#- sleep 600
+
+# Docker
+- echo "==> Docker"
+- docker info
+- docker run hello-world
