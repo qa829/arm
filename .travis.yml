@@ -1,5 +1,5 @@
 arch: arm64
-language: minimal
+language: ruby
 dist: xenial
 
 env:
