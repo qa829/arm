@@ -1,5 +1,4 @@
 arch: arm64
-language: slim
 dist: bionic
 
 env:
