@@ -1,5 +1,5 @@
 arch: arm64
-language: slim
+language: minimal
 dist: xenial
 
 env:
