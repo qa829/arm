@@ -1,11 +1,10 @@
 arch: arm64
 language: slim
 dist: xenial
-#group: dev
 
 env:
 - BUILD=1
-#- BUILD=2
+- BUILD=2
 # - BUILD=3
 
 install: skip
