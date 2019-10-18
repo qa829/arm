@@ -1,6 +1,6 @@
 arch: arm64
-language: ruby
-dist: xenial
+language: slim
+dist: bionic
 
 env:
 - BUILD=1
