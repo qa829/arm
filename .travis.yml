@@ -2,9 +2,6 @@ arch: arm64
 dist: bionic
 language: c
 
-rvm:
-- 2.6.5
-
 env:
 - BUILD=1
 #- BUILD=2
@@ -37,7 +34,7 @@ script:
 - docker run hello-world
 
 # ruby
-- echo "==> Ruby"
-- ruby -v
-- gem i bundler
+#- echo "==> Ruby"
+#- ruby -v
+#- gem i bundler
 #- sleep 600
