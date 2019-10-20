@@ -1,6 +1,10 @@
 arch: arm64
 #dist: bionic
 
+rvm:
+- 2.5.3
+- 2.6.3
+
 env:
 - BUILD=1
 #- BUILD=2
