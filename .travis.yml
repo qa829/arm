@@ -1,6 +1,6 @@
 arch: arm64
 dist: xenial
-language: minimal
+language: ruby
 
 env:
 - BUILD=1
