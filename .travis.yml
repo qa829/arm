@@ -1,6 +1,6 @@
 arch: arm64
 dist: bionic
-language: slim
+language: minimal
 
 env:
 - BUILD=1
