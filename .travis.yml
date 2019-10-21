@@ -1,16 +1,5 @@
-# arch: arm64
-# dist: bionic
-
-dist: xenial
-
-matrix:
-  include:
-    - os: linux
-      arch: arm64
-      compiler: linux-gcc7-dev
-      addons: *gcc7
-      env: CC='gcc-7' CXX='g++-7' BUILD_TYPE='Dev'
-      dist: bionic
+arch: arm64
+dist: bionic
 #language: go
 
 # go:
