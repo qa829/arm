@@ -1,5 +1,5 @@
 arch: arm64
-dist: xenial
+#dist: xenial
 #language: ruby
 
 # rvm:
