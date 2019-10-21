@@ -2,18 +2,18 @@ arch: arm64
 #dist: bionic
 #language: ruby
 
-rvm:
-- 2.6.4
-- 2.6.3
-- 2.6.2
+# rvm:
+# - 2.6.4
+# - 2.6.3
+# - 2.6.2
 
-cache:
-  directories:
-   - /home/travis/.rvm/
+# cache:
+#   directories:
+#    - /home/travis/.rvm/
      
 env:
 - BUILD=1
-# - BUILD=2
+- BUILD=2
 # - BUILD=3
 
 install: skip
