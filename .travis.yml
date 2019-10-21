@@ -1,14 +1,10 @@
 arch: arm64
 dist: xenial
-language: ruby
-
-rvm:
-- 2.6.3
-- 2.6.4
+language: minimal
 
 env:
 - BUILD=1
-#- BUILD=2
+- BUILD=2
 # - BUILD=3
 
 install: skip
@@ -38,7 +34,7 @@ script:
 - docker run hello-world
 
 # ruby
-- echo "==> Ruby"
-- ruby -v
-- gem i bundler
+# - echo "==> Ruby"
+# - ruby -v
+# - gem i bundler
 #- sleep 600
