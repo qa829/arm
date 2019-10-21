@@ -1,66 +1,46 @@
 arch: arm64
-dist: bionic
-language: ruby
+#dist: bionic
+#language: ruby
 
-jobs:
-  include:
-    - stage: warm_cache
-      script:
-        - echo "foo" > foo.txt
-      workspaces:
-        create:
-          name: ws1
-          paths:
-            - foo.txt
-    - stage: use_cache
-      workspaces:
-        use: ws1
-      script:
-        - cat foo.txt || true
+rvm:
+- 2.6.4
+- 2.6.3
+- 2.6.2
 
-# arch: arm64
-# dist: bionic
-# language: ruby
-
-# rvm:
-# - 2.6.4
-# - 2.6.3
-# - 2.6.2
-
-# cache:
-#   directories:
-#    - /home/travis/.rvm/
+cache:
+  directories:
+   - /home/travis/.rvm/
      
-# env:
-# - BUILD=1
-# # - BUILD=2
-# # - BUILD=3
+env:
+- BUILD=1
+# - BUILD=2
+# - BUILD=3
 
-# install: skip
+install: skip
 
-# script:
-# # Environment information
-# - echo "==> Environment information"
-# - uname -a
-# - cat /etc/os-release
-# - grep ^processor /proc/cpuinfo
-# - free -m
-# - df -h
+script:
+# Environment information
+- echo "==> Environment information"
+- uname -a
+- cat /etc/os-release
+- grep ^processor /proc/cpuinfo
+- free -m
+- df -h
 
-# # Snaps
-# - echo "==> Snaps"
-# - sudo snap install core || true
-# - sudo snap install core
-# - sudo snap install hello-world
-# - hello-world
+# Snaps
+- echo "==> Snaps"
+- sudo snap install core || true
+- sudo snap install core
+- sudo snap install hello-world
+- hello-world
 
-# # Sleep
-# #- sleep 600
+# Sleep
+#- sleep 600
 
-# # Docker
-# - echo "==> Docker"
-# - docker info
-# - docker run hello-world
+# Docker
+- echo "==> Docker"
+- docker info
+- docker run hello-world
 
 # # # ruby
 # # - echo "==> Ruby"
