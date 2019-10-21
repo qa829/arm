@@ -7,9 +7,6 @@ rvm:
 - 2.6.3
 - 2.6.2
 
-before_cache:
-  - apt update && apt install hashdeep -y
-  
 cache:
   directories:
    - /home/travis/.rvm/
