@@ -37,4 +37,4 @@ script:
 - echo "==> Ruby"
 - ruby -v
 - gem i bundler
-- sleep 120
+#- sleep 120
