@@ -10,7 +10,7 @@ matrix:
       compiler: linux-gcc7-dev
       addons: *gcc7
       env: CC='gcc-7' CXX='g++-7' BUILD_TYPE='Dev'
-dist: bionic
+      dist: bionic
 #language: go
 
 # go:
