@@ -1,6 +1,6 @@
 arch: arm64
 dist: xenial
-language: slim
+language: bash
 
 # go:
 # - 1.12.x
