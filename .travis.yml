@@ -2,6 +2,25 @@ arch: arm64
 #dist: xenial
 #language: ruby
 
+jobs:
+  include:
+  - dist: xenial
+    language: ruby
+  - dist: bionic
+    language: ruby
+  - dist: xenial
+    language: c
+  - dist: bionic
+    language: c
+  - dist: xenial
+    language: minimal
+  - dist: bionic
+    language: minimal
+  - dist: xenial
+    language: slim
+  - dist: bionic
+    language: slim
+    
 # rvm:
 # - 2.6.4
 # - 2.6.3
@@ -11,9 +30,9 @@ arch: arm64
 #   directories:
 #    - /home/travis/.rvm/
      
-env:
-- BUILD=1
-- BUILD=2
+# env:
+# - BUILD=1
+# - BUILD=2
 # - BUILD=3
 
 install: skip
