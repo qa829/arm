@@ -2,6 +2,10 @@ arch: arm64
 #dist: xenial
 language: go
 
+go:
+- 1.12.x
+- master
+
 # jobs:
 #   include:
 #   - name: dest-and-lang-default
