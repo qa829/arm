@@ -1,6 +1,22 @@
-arch: arm64
-dist: xenial
-language: bash
+notifications:
+  email: false
+
+language: c
+  
+compiler:
+  - gcc
+  - clang
+
+arch:
+  - amd64
+  - arm64
+
+# install:
+#   - pip install --user numpy
+
+# arch: arm64
+# dist: xenial
+# language: bash
 
 # go:
 # - 1.12.x
