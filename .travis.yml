@@ -68,7 +68,7 @@ install:
 # - BUILD=2
 # - BUILD=3
 
-install: skip
+#install: skip
 
 script:
 # Environment information
