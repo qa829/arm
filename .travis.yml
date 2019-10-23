@@ -98,5 +98,5 @@ script:
 # # # ruby
 - echo "==> Ruby"
 - ruby -v
-- gem i bundler
+#- gem i bundler
 # # #- sleep 120
