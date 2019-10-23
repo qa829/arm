@@ -1,8 +1,8 @@
 notifications:
   email: false
 
-# language: c
-# dist: bionic
+language: minimal
+dist: bionic
   
 # compiler:
 #   - gcc
