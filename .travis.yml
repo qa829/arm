@@ -1,19 +1,24 @@
 notifications:
   email: false
 
-language: c
-dist: bionic
+# language: c
+# dist: bionic
   
-compiler:
-  - gcc
-  - clang
+# compiler:
+#   - gcc
+#   - clang
 
 arch:
   #- amd64
   - arm64
 
-# install:
-#   - pip install --user numpy
+install:
+  - pip install --user numpy
+
+rvm:
+- 2.6.4
+- 2.6.3
+- 2.6.2
 
 # arch: arm64
 # dist: xenial
@@ -54,11 +59,6 @@ jobs:
   - dist: bionic
     name: bionic-slim
     language: slim
-    
-# rvm:
-# - 2.6.4
-# - 2.6.3
-# - 2.6.2
 
 # cache:
 #   directories:
