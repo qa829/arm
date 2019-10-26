@@ -50,11 +50,13 @@ jobs:
   - dist: xenial
     name: xenial-python
     language: python
+    python: "3.8"
     script:
     - python -V
   - dist: bionic
     name: bionic-python
     language: python
+    python: "3.8"
     script:
     - python -V
   - dist: xenial
