@@ -48,6 +48,16 @@ jobs:
     name: bionic-c
     language: c
   - dist: xenial
+    name: xenial-python
+    language: python
+    script:
+    - python -V
+  - dist: bionic
+    name: bionic-python
+    language: python
+    script:
+    - python -V
+  - dist: xenial
     name: xenial-minimal
     language: minimal
   - dist: bionic
