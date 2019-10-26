@@ -1,7 +1,7 @@
 notifications:
   email: false
 
-language: bash
+language: python
 dist: bionic
   
 # compiler:
@@ -9,9 +9,13 @@ dist: bionic
 #   - clang
 
 arch:
-  - amd64
+#  - amd64
   - arm64
 
+python:
+- "3.8"
+- "3.7"
+- "3.6"
 # install:
 #   - pip install --user numpy
 
@@ -47,18 +51,18 @@ jobs:
 #   - dist: bionic
 #     name: bionic-c
 #     language: c
-  - dist: xenial
-    name: xenial-python
-    language: python
-    python: "3.8.0"
-    script:
-    - python -V
-  - dist: bionic
-    name: bionic-python
-    language: python
-    python: "3.8.0"
-    script:
-    - python -V
+#   - dist: xenial
+#     name: xenial-python
+#     language: python
+#     python: "3.8.0"
+#     script:
+#     - python -V
+#   - dist: bionic
+#     name: bionic-python
+#     language: python
+#     python: "3.8.0"
+#     script:
+#     - python -V
 #   - dist: xenial
 #     name: xenial-minimal
 #     language: minimal
@@ -112,3 +116,8 @@ script:
 - ruby -v
 #- gem i bundler
 # # #- sleep 120
+
+
+# # # python
+- echo "==> Python"
+- python -V
