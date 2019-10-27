@@ -2,9 +2,8 @@ notifications:
   email: false
 
 language: python
-dist:
-- bionic
-- xenial
+dist: bionic
+#dist: xenial
   
 # compiler:
 #   - gcc
