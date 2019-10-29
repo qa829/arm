@@ -1,5 +1,5 @@
 language: java
-dist: xenial
+dist: bionic
 jobs:
   include:
     - jdk: openjdk9
