@@ -1,11 +1,11 @@
 language: java
-
+dist: bionic
 jobs:
   include:
-    - jdk: openjdk8
-    - jdk: openjdk8
-      arch: arm64
-    - jdk: openjdk13
+    - jdk: openjdk9
+#     - jdk: openjdk8
+#       arch: arm64
+#     - jdk: openjdk13
 
 # notifications:
 #   email: false
