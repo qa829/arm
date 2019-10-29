@@ -1,4 +1,4 @@
-language: java2
+language: java
 dist: bionic
 jobs:
   include:
@@ -20,7 +20,7 @@ jobs:
 
 arch:
 # #  - amd64
-#- arm64
+- arm64
 
 # python:
 # - "3.8"
