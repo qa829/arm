@@ -1,8 +1,8 @@
-language: java
+language: minimal
 dist: bionic
-jobs:
-  include:
-    - jdk: openjdk9
+# jobs:
+#   include:
+#     - jdk: openjdk9
 #     - jdk: openjdk8
 #       arch: arm64
 #     - jdk: openjdk13
