@@ -1,6 +1,5 @@
 language: minimal
-dist:
-- xenial
+dist: xenial
 # jobs:
 #   include:
 #     - jdk: openjdk9
