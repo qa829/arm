@@ -91,6 +91,16 @@ jobs:
     script:
     - python -V
   - dist: xenial
+    name: xenial-python-default
+    language: python
+    script:
+    - python -V
+  - dist: bionic
+    name: bionic-python-default
+    language: python
+    script:
+    - python -V 
+  - dist: xenial
     name: xenial-minimal
     language: minimal
   - dist: bionic
