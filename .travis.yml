@@ -77,7 +77,7 @@ jobs:
     name: bionic-go
     language: go
     script:
-    - go vertsion
+    - go version
   - dist: xenial
     name: xenial-python
     language: python
