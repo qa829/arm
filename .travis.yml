@@ -1,6 +1,5 @@
 language: minimal
 dist:
-- bionic
 - xenial
 # jobs:
 #   include:
@@ -51,49 +50,49 @@ arch:
 # - 1.12.x
 # - 1.13.x
 
-# jobs:
-#   include:
-#   - name: dest-and-lang-default
-#   - dist: xenial
-#     name: xenial-lang-default
-#   - dist: bionic
-#     name: bionic-lang-default
-#   - dist: xenial
-#     name: xenial-ruby
-#     language: ruby
-#   - dist: bionic
-#     name: bionic-ruby
-#     language: ruby
-#   - dist: xenial
-#     name: xenial-c
-#     language: c
-#   - dist: bionic
-#     name: bionic-c
-#     language: c
-#   - dist: xenial
-#     name: xenial-python
-#     language: python
-#     python: "3.8.0"
-#     script:
-#     - python -V
-#   - dist: bionic
-#     name: bionic-python
-#     language: python
-#     python: "3.8.0"
-#     script:
-#     - python -V
-#   - dist: xenial
-#     name: xenial-minimal
-#     language: minimal
-#   - dist: bionic
-#     name: bionic-minimal
-#     language: minimal
-#   - dist: xenial
-#     name: xenial-slim
-#     language: slim
-#   - dist: bionic
-#     name: bionic-slim
-#     language: slim
+jobs:
+  include:
+  - name: dest-and-lang-default
+  - dist: xenial
+    name: xenial-lang-default
+  - dist: bionic
+    name: bionic-lang-default
+  - dist: xenial
+    name: xenial-ruby
+    language: ruby
+  - dist: bionic
+    name: bionic-ruby
+    language: ruby
+  - dist: xenial
+    name: xenial-c
+    language: c
+  - dist: bionic
+    name: bionic-c
+    language: c
+  - dist: xenial
+    name: xenial-python
+    language: python
+    python: "3.8.0"
+    script:
+    - python -V
+  - dist: bionic
+    name: bionic-python
+    language: python
+    python: "3.8.0"
+    script:
+    - python -V
+  - dist: xenial
+    name: xenial-minimal
+    language: minimal
+  - dist: bionic
+    name: bionic-minimal
+    language: minimal
+  - dist: xenial
+    name: xenial-slim
+    language: slim
+  - dist: bionic
+    name: bionic-slim
+    language: slim
 
 # cache:
 #   directories:
