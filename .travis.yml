@@ -69,6 +69,16 @@ jobs:
     name: bionic-c
     language: c
   - dist: xenial
+    name: xenial-go
+    language: go
+    script:
+    - go version
+  - dist: bionic
+    name: bionic-go
+    language: go
+    script:
+    - go vertsion
+  - dist: xenial
     name: xenial-python
     language: python
     python: "3.8.0"
