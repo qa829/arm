@@ -1,5 +1,7 @@
 language: minimal
-dist: bionic
+dist:
+- bionic
+- xenial
 # jobs:
 #   include:
 #     - jdk: openjdk9
