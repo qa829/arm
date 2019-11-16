@@ -112,7 +112,12 @@ jobs:
   - dist: bionic
     name: bionic-slim
     language: slim
-
+  - dist: xenial
+    name: xenial-generic
+    language: generic
+  - dist: bionic
+    name: bionic-generic
+    language: generic
 # cache:
 #   directories:
 #    - /home/travis/.rvm/
