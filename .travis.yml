@@ -140,7 +140,7 @@ script:
 
 # Snaps
 - echo "==> Snaps"
-- sudo snap install core || true
+#- sudo snap install core || true
 - sudo snap install core
 - sudo snap install hello-world
 - hello-world
