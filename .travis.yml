@@ -139,7 +139,7 @@ script:
 - grep ^processor /proc/cpuinfo
 - free -m
 - df -h
-- apt update
+- sudo apt update
 
 # Snaps
 - echo "==> Snaps"
