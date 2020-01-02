@@ -21,6 +21,8 @@ dist: xenial
 arch:
 # #  - amd64
 - arm64
+- ppc64le
+- s390x
 
 # python:
 # - "3.8"
@@ -137,6 +139,7 @@ script:
 - grep ^processor /proc/cpuinfo
 - free -m
 - df -h
+- apt update
 
 # Snaps
 - echo "==> Snaps"
